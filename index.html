@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Access Control Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Access Control Engine</h1>
+
+  <select id="role" onchange="render()">
+    <option value="guest">Guest</option>
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+  </select>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Action</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="matrix"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
